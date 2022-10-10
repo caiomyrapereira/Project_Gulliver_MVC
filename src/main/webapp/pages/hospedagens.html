@@ -1,0 +1,173 @@
+<header class="hospedagem_header  d-flex justify-content-center align-items-center">
+  <form class="d-flex justify-content-between align-items-center form">
+
+    <input type="text" class="form-control local" placeholder="Onde você gostaria de se hospedar? *"
+      aria-label="Para onde você gostaria de ir? *" required>
+
+    <div class="d-flex justify-content-between align-items-center">
+      <input type="date" class="form-control date" placeholder="Data" aria-label="Data" required>
+      <button class="border border-0 btn_search">
+        <img src="./images/icons8-busca-pelo-amor-50.png" alt="Botão para pesquisar">
+      </button>
+    </div>
+  </form>
+</header>
+
+<nav aria-label="breadcrumb" class="mt-4 container-xxl m-auto">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="#" onclick="navToInicio()">Início</a></li>
+    <li class="breadcrumb-item active" id="destino-nome" aria-current="page">Hospedagens</li>
+  </ol>
+</nav>
+
+<h2 class="mb-3 text-center" id="carousel-heading">MELHORES HOTÉIS DA REGIÃO</h2>
+
+
+<article class="hoteis-body container-xxl m-auto">
+  <aside class="hotel-image d-none d-xl-block">
+    <img src="./images/hotel.jpg" alt="Hotel">
+  </aside>
+  <section class="container-xxl">
+
+    <div class="row">
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/fairmont.jpg"
+              alt="Hotel Fairmont Rio de Janeiro Copacabana">
+            <h5 class="card-title">Fairmont Rio de Janeiro Copacabana</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">Rio de Janeiro</p>
+            <button type="button" id="fairmont" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$1.170 a diária
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/france.jpg" alt="Hotel Colline de France">
+            <h5 class="card-title">Hotel Colline de France</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">Gramado</p>
+            <button type="button" id="coline" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$1.495 a diária
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/bravaria.jpg" alt="Hotel Bravaria Sport Hotel">
+            <h5 class="card-title">Bravaria Sport Hotel</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">Gramado</p>
+            <button type="button" id="bravaria" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$340 a diária
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/ort.jpg" alt="Ort Hotel">
+            <h5 class="card-title">Ort Hotel</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">Campos do Jordão</p>
+            <button type="button" id="ort" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$1.255 a diária
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/hyatt.jpg" alt="Hotel Grand Hyatt São Paulo">
+            <h5 class="card-title">Grand Hyatt São Paulo</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">São Paulo</p>
+            <button type="button" id="hyatt" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$798 a diária
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-4 mb-4">
+        <div class="card shadow-lg">
+          <div class="card-body">
+            <img class="card-img w-100 pb-2" src="./images/hoteis/miramar.jpg" alt="Miramar Hotel by Windsor">
+            <h5 class="card-title">Miramar Hotel by Windsor</h5>
+            <h6 class="card-subtitle mb-2 text-muted">★★★★★</h6>
+            <p class="card-text">Rio de Janeiro</p>
+            <button type="button" id="windsor" class="btn btn-light btn-map d-flex" data-bs-toggle="modal"
+              data-bs-target="#modalLocalization">
+              <span class="material-symbols-outlined map">
+                location_on
+              </span>
+              Clique para ver no mapa
+            </button>
+          </div>
+          <div class="card-footer text-center">
+            A partir de R$567 a diária
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</article>
+
+<div class="modal fade" id="modalLocalization" tabindex="-1" aria-labelledby="modalLocalization" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="localTitle"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <iframe id="gmap_canvas" src="" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="./css/hospedagens.css">
+<script src="./js/hospedagens.js"></script>
